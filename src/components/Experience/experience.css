@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    margin: 0;
+}
+
+* {
+    font-family: 'Quicksand', sand-serif;
+}
+
+.jobs--title {
+    font-size: 46px;
+    font-weight: 900;
+    margin: 0;
+    color: white;
+}
+
+.jobs--position {
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+
+.jobstitle {
+    padding-bottom: 60px;
+    color: white;
+    font-family: 'Quicksand', sand-serif;
+    font-size: 50px;
+}
+
+.jobs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    /* overflow-x: auto; */
+    align-self: center;
+}
+
+.jobs--desctext {
+    color: rgba(218, 203, 203, 0.693);
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* .jobs {
+    display: flex;
+    flex-direction: row;
+    padding: .25rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 500px;
+    background: blue;
+    flex: 1 1 auto;
+} */
+
+
+/* .jobs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+} */
+
+
+/* .job {
+    max-width: 50rem;
+    width: 90%;
+    width: 30rem;
+    font-size: 12px;
+    flex: 1 1 auto;         
+    display: flex;          
+    flex-direction: row; 
+    position: relative;
+    background: red;
+    flex-wrap: wrap;
+    align-self: center;
+} */
+
+.job {
+    
+    width: 30%;
+    max-width: 40rem;
+    font-size: 12px;
+    flex: 0 0 auto;         
+    display: flex;          
+    flex-direction: column; 
+    position: relative;
+    border: 5px solid white;
+    border-radius: 20px;
+    /* background-color: red; */
+    background: linear-gradient(135deg, #403F38 0%, #161a1d 50%, #183f45 100%);
+
+    box-shadow: 0px 8px 10px 3px rgba(0,0,0,0.68);
+    min-width: 400px;
+    /* gap: .5rem; */
+
+}
+
+
+/* .job--vis {
+    height: 150px; */
+    /* margin-right: 6px;
+    background: rgb(124, 35, 35);
+    width: 50%;
+    margin-right: auto;
+} */
+
+/* .job--vis {
+    width: 100%;
+    border-radius: 9px;
+    margin-bottom: 9px;
+} */
+
+.job--vis img {
+    margin-top: 2%;
+    width: 95%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 10px 3px rgba(0,0,0,0.68);
+}
+
+/* .jobs--desc {
+    color: white;
+    background: white;
+    width: 40%;
+    height: 15rem;
+    outline-color: white;
+    margin-left: 6px;
+} */
+
+.job--tool {
+    color: white;
+    border: 2px solid white;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+
+}
+
+.jobs--toolslist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding: 10px;
+    /* background-color: red; */
+}

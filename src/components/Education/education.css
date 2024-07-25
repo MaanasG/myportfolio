@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+.school--school {
+    font-size: 37px;
+    font-weight: 900;
+    margin: 0;
+    color: white;
+}
+
+.school--grad {
+    font-size: 30px;
+}
+
+.school--desc {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.school--coursework {
+    font-weight: 100;
+    padding: .4rem;
+}
+
+.school--activities {
+    font-weight: 100;
+    padding: .4rem;
+}
+
+.education--title {
+    margin-bottom: 60px;
+    font-weight: 900;
+    font-size: 46px;
+    font-weight: 900;
+    color: white;
+}
+
+.schools {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.schoolcontainer {
+    max-width: 100rem;
+    width: 30rem;
+    background: linear-gradient(135deg, #403F38 0%, #161a1d 50%, #4a1313 100%);
+
+    padding: 30px;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    min-width: 30rem;
+    box-shadow: 0px 8px 10px 3px rgba(0,0,0,0.68);
+
+}
+
+.container--img {
+    height: 10rem;
+    margin: 10px;
+}
