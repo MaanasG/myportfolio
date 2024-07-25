@@ -2,7 +2,7 @@ import React from 'react'
 import coffeepic from './assets/coffeepic.jpg'
 import './aboutme.css'
 
-export default function AboutMe() {
+const AboutMe = () => {
     return(
         <div 
             className="aboutme"
@@ -23,11 +23,37 @@ export default function AboutMe() {
                     <button className="landing--button">Github</button>
                 </div> */}
             </div>
-            <img 
-                src={coffeepic} 
-                alt=""
-                className="aboutme--right"
-            />
+            <CompImage />
         </div>
     )
 }
+
+const CompImage = () => {
+    const [hovered, setHovered] = React.useState(false);
+
+    const handleMouseEnter = () => {
+        setHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        setHovered(false);
+    };
+
+    const containerStyle = {
+        transform: hovered ? 'scale(0.95)' : 'scale(1)',
+        transition: 'transform 0.3s ease-in-out'
+    };
+
+    return (
+        <img 
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            style={containerStyle}
+            src={coffeepic} 
+            alt=""
+            className="aboutme--right"
+        />
+    )
+}
+
+export default AboutMe;

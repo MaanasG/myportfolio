@@ -117,11 +117,34 @@ const Experience = () => {
 const JobCard = (props) => {
     // [title, position, description, vidsrc, linkto, langs] 
 
+
+    const [hovered, setHovered] = React.useState(false);
+
+    const handleMouseEnter = () => {
+        setHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        setHovered(false);
+    };
+
+    const containerStyle = {
+        transform: hovered ? 'scale(0.95)' : 'scale(1)',
+        transition: 'transform 0.3s ease-in-out'
+    };
     return (
         // <img />
+
+        
+
         <div className="job">
             <div className="job--vis">
-                <img src={props.vidsrc} alt="" />
+                <img 
+                    src={props.vidsrc} alt=""
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                    style={containerStyle}
+                    />
             </div>
             <div className="jobs--desc">
                 <h2 className="jobs--title">{props.title}</h2>

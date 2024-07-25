@@ -3,11 +3,31 @@ import landingphoto from './assets/4hphoto.jpg'
 import './landing.css'
 
 export default function Landing() {
+    
+    const [hovered, setHovered] = React.useState(false);
+
+    const handleMouseEnter = () => {
+        setHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        setHovered(false);
+    };
+
+    const containerStyle = {
+        transform: hovered ? 'scale(0.95)' : 'scale(1)',
+        transition: 'transform 0.3s ease-in-out'
+    };
+    
     return(
         <div 
             className="landing"
         >
             <img 
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                style={containerStyle}
+            
                 src={landingphoto} 
                 alt=""
                 className="landing--left"/>

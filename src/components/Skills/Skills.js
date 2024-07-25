@@ -51,9 +51,29 @@ const Skills = () => {
 }
 
 const Skill = (props) => {
+    
+    const [hovered, setHovered] = React.useState(false);
+
+    const handleMouseEnter = () => {
+        setHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        setHovered(false);
+    };
+
+    const containerStyle = {
+        transform: hovered ? 'scale(0.95)' : 'scale(1)',
+        transition: 'transform 0.3s ease-in-out'
+    };
+
     return (
         <div className="skill--card">
-            <img src={props.image} alt="" className="skill--img" />
+            <img 
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                style={containerStyle}
+                src={props.image} alt="" className="skill--img" />
             <h3 className="skill--name"><i>{props.lang}</i></h3>
         </div>
     )

@@ -38,10 +38,28 @@ const Education = () => {
 }
 
 const School = (props) => {
-    //school, grad, desc, coursework, activities, image
-    
+    const [hovered, setHovered] = React.useState(false);
+
+    const handleMouseEnter = () => {
+        setHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        setHovered(false);
+    };
+
+    const containerStyle = {
+        transform: hovered ? 'scale(0.95)' : 'scale(1)',
+        transition: 'transform 0.3s ease-in-out'
+    };
+
     return (
-        <div className="schoolcontainer">
+        <div
+            className="schoolcontainer"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            style={containerStyle}
+        >
             <img src={props.image} alt="" className="container--img" />
             <div className="container--abstract">
                 <h2 className="school--school">{props.school}</h2>
@@ -51,7 +69,7 @@ const School = (props) => {
                 <h5 className="school--activities"><b>Activities: </b>{props.activities}</h5>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Education;
