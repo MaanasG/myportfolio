@@ -25,6 +25,7 @@ export default function AboutMe() {
             </div>
             <img 
                 src={coffeepic} 
+                alt=""
                 className="aboutme--right"
             />
         </div>

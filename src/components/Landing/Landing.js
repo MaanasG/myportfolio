@@ -9,6 +9,7 @@ export default function Landing() {
         >
             <img 
                 src={landingphoto} 
+                alt=""
                 className="landing--left"/>
             
             <div className="landing--right">

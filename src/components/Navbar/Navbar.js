@@ -8,7 +8,7 @@ export default function Navbar() {
         <nav 
             className="navbar"
         >
-            <img src={logo} className="navbar--leftimg"/>
+            <img src={logo} alt="" className="navbar--leftimg"/>
             <h1 className="navbar--name">Maanas Gopi</h1>
             <h2 className="navbar--menu">Menu</h2>
         </nav>
