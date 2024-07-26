@@ -6,6 +6,7 @@ import AboutMe from "../components/About Me/AboutMe.js"
 import Education from "../components/Education/Education.js"
 import Skills from "../components/Skills/Skills.js"
 import ContactMe from "../components/Contact/ContactMe.js"
+import Footer from "../components/Footer/Footer.js"
 
 export default function Main() {
     return(
@@ -22,6 +23,7 @@ export default function Main() {
             <Divider />
             <ContactMe />
             <Divider />
+            <Footer />
         </div>
     )
 }

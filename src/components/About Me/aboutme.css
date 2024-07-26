@@ -28,7 +28,6 @@ h1, h2, h3, h4, h5, h6, p {
 .aboutme--header {
   letter-spacing: .01cm;
   font-size: 47px;
-  margin-top: 20px;
 }
 
 body {
@@ -48,8 +47,6 @@ body {
   flex: 1 1 auto;
   padding-left: 7%;
   padding-right: 7%;
-  padding-top: 20px;
-  padding-bottom: 3%;
   gap: 1rem;
   flex-wrap: wrap;
   align-self: center;

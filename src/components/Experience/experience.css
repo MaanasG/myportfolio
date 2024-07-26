@@ -10,14 +10,14 @@ body {
 }
 
 .jobs--title {
-    font-size: 46px;
+    font-size: 3vw;
     font-weight: 900;
     margin: 0;
     color: white;
 }
 
 .jobs--position {
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: 500;
     color: white;
     padding-bottom: 5px;
@@ -28,7 +28,7 @@ body {
     padding-bottom: 60px;
     color: white;
     font-family: 'Quicksand', sand-serif;
-    font-size: 50px;
+    font-size: 4vw;
 }
 
 .jobs {
@@ -43,11 +43,12 @@ body {
 
 .jobs--desctext {
     color: rgba(218, 203, 203, 0.693);
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
     padding-bottom: 15px;
     padding-left: 10px;
     padding-right: 10px;
+    overflow: wrap;
 }
 
 /* .jobs {
@@ -98,7 +99,7 @@ body {
     /* background-color: red; */
     background: linear-gradient(135deg, #403F38 0%, #161a1d 50%, #183f45 100%);
 
-    box-shadow: 0px 8px 10px 3px rgba(0,0,0,0.68);
+    box-shadow: 8px 18px 15px 8px rgba(0,0,0,0.68);
     min-width: 400px;
     /* gap: .5rem; */
 

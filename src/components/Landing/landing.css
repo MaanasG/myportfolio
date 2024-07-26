@@ -42,12 +42,10 @@ body {
   padding-left: 7%;
   padding-right: 7%;
   padding-top: 12rem;
-  padding-bottom: 3%;
-  gap: 1rem;
   flex-wrap: wrap;
   align-self: center;
   justify-content: center; /* Center items horizontally */
-
+  gap: 3rem;
 }
 
 /*left image container*/
@@ -62,13 +60,14 @@ body {
   border: 2px solid white;
   border-radius: 20px;
   box-shadow: -7px 12px 10px 9px rgba(0,0,0,0.78);
+  
 }
 
 .landing--right {
   display: flex;
   flex-direction: column;
   float: left;
-  padding-left: 2rem;
+  /* padding-left: 2rem; */
   width: 25rem; 
   color: white;
   align-self: center;

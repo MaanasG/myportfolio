@@ -16,7 +16,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <img src={logo} alt="Logo" className="navbar--leftimg" />
-            <h1 className="navbar--name">Maanas Gopi</h1>
+            <h1 className="navbar--name"><i>Maanas Gopi</i></h1>
             <div className="navbar--menu-container" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                 <h2 className="navbar--menu">Menu</h2>
                 <div className={`navbar--dropdown ${isHover ? 'show' : ''}`}>
