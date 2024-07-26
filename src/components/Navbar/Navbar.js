@@ -21,7 +21,7 @@ const Navbar = () => {
                 <h2 className="navbar--menu">Menu</h2>
                 <div className={`navbar--dropdown ${isHover ? 'show' : ''}`}>
                     <ul>
-                            <a className="navbar--dropdown--item" href="https://drive.google.com/file/d/1f6uhB8LzavR7SKcLLyzlZwGARSHyzK36/view" target="_blank" rel="noopener noreferrer">
+                            <a className="navbar--dropdown--item" href="https://drive.google.com/file/d/1DTjJAUafmm6EpU492lKeAlrbF4bMtAxw/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                             <li>Resume</li>
                         </a>
                         <a className="navbar--dropdown--item" href="https://www.linkedin.com/in/maanas-gopi" target="_blank" rel="noopener noreferrer">
