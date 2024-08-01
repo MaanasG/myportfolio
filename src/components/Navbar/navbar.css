@@ -29,7 +29,18 @@
   color: white;
   font-family: 'Quicksand', sans-serif;
   letter-spacing: .01cm;
+  
 }
+
+@media (width <= 550px) {
+ .navbar--name{
+  display: none;
+ } 
+ .navbar--menu {
+  margin-left: .2rem;
+ }
+}
+
 
 .navbar--menu-container {
   position: relative;
