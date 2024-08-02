@@ -8,22 +8,38 @@ import Skills from "../components/Skills/Skills.js"
 import ContactMe from "../components/Contact/ContactMe.js"
 import Footer from "../components/Footer/Footer.js"
 
+import { Fade, Slide, Zoom, JackInTheBox } from "react-awesome-reveal";
+
 export default function Main() {
     return(
         <div>
-            <Landing />
+            <Fade delay="20">
+                <Landing /> 
+            </Fade>
             <Divider />
-            <Experience />
+            <Slide triggerOnce>
+                <Experience />
+            </Slide>
             <Divider />
-            <AboutMe />
+            <Fade delay="20">
+                <AboutMe />
+            </Fade>
             <Divider />
-            <Education />
+            <Zoom delay="20">
+                <Education />
+            </Zoom>
             <Divider />
-            <Skills />
+            <Fade delay="20">
+                <Skills />
+            </Fade>
             <Divider />
-            <ContactMe />
+            <Fade delay="20">
+                <ContactMe />
+            </Fade>
             <Divider />
-            <Footer />
+            <JackInTheBox delay="20">
+                <Footer />
+            </JackInTheBox>
         </div>
     )
 }

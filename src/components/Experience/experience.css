@@ -10,14 +10,14 @@ body {
 }
 
 .jobs--title {
-    font-size: 3vw;
+    font-size: 46px;
     font-weight: 900;
     margin: 0;
     color: white;
 }
 
 .jobs--position {
-    font-size: 2vw;
+    font-size: 38px;
     font-weight: 500;
     color: white;
     padding-bottom: 5px;
@@ -28,7 +28,7 @@ body {
     padding-bottom: 60px;
     color: white;
     font-family: 'Quicksand', sand-serif;
-    font-size: 4vw;
+    font-size: 46px;
 }
 
 .jobs {
@@ -37,7 +37,7 @@ body {
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
-    /* overflow-x: auto; */
+    overflow-x: auto;
     align-self: center;
 }
 
@@ -87,7 +87,7 @@ body {
 
 .job {
     
-    width: 30%;
+    width: 20%;
     max-width: 40rem;
     font-size: 12px;
     flex: 0 0 auto;         

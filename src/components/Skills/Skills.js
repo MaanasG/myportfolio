@@ -1,6 +1,9 @@
 import React from 'react'
 import './skills.css'
 
+import { Fade } from "react-awesome-reveal"
+
+
 // import images
 
 // const images = require.context('./assets', true);
@@ -28,21 +31,27 @@ const Skills = () => {
                 <h2 className="skills--subtitle"><i>Full-Stack Development</i></h2>
                 <div className="skills--list">
                     {Object.keys(fullstackimages).map((lang, index) => (
-                        <Skill key={index} lang={lang} image={fullstackimages[lang]} />
+                        <Fade>
+                            <Skill key={index} lang={lang} image={fullstackimages[lang]} />
+                        </Fade>
                     ))}
                 </div>
 
                 <h2 className="skills--subtitle"><i>DevOps</i></h2>
                 <div className="skills--list">
                     {Object.keys(devopsimages).map((lang, index) => (
-                        <Skill key={index} lang={lang} image={devopsimages[lang]} />
+                        <Fade>
+                            <Skill key={index} lang={lang} image={devopsimages[lang]} />
+                        </Fade>
                     ))}
                 </div>
 
                 <h2 className="skills--subtitle"><i>Other Languages + Tools + Libraries</i></h2>
                 <div className="skills--list">
                     {Object.keys(otherimages).map((lang, index) => (
-                        <Skill key={index} lang={lang} image={otherimages[lang]} />
+                        <Fade>
+                            <Skill key={index} lang={lang} image={otherimages[lang]} />
+                        </Fade>
                     ))}
                 </div>
             </div>

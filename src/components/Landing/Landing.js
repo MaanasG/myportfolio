@@ -2,6 +2,9 @@ import React from 'react'
 import landingphoto from './assets/4hphoto.jpg'
 import './landing.css'
 
+import { Slide, Rotate } from "react-awesome-reveal";
+
+
 export default function Landing() {
     
     const [hovered, setHovered] = React.useState(false);
@@ -33,9 +36,10 @@ export default function Landing() {
                 className="landing--left"/>
             
             <div className="landing--right">
-                <h1 className="landing--header">Hi!</h1>
+                <Slide direction='right'>
+                    <h1 className="landing--header">Hi!</h1>
+                </Slide>
                 <h3 className="landing--myname">My name is Maanas Gopi.</h3>    
-                
                 <h4 className="landing--abstract">I'm an undergraduate student at 
                     the University of Maryland, currently
                     studying computer science and finance.</h4>
