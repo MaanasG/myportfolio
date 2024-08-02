@@ -13,9 +13,7 @@ function App() {
   return (
     <div className="App">
       
-      <Fade>
-        <Navbar />
-      </Fade>
+      <Navbar />
       <Main />
     
     </div>
