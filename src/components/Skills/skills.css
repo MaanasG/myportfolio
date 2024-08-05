@@ -5,7 +5,7 @@
 
 .skills {
     margin: auto;
-    width: 50%;
+    width: 70%;
 }
 
 .skills--title {
@@ -42,7 +42,7 @@
 }
 
 .skill--card {
-    width: 11rem;
+    width: 9rem;
     margin: 10px;
     /* border: 2px solid white; */
     border-radius: 20px;
@@ -51,7 +51,7 @@
 
 .skill--img {
     margin-top: 1rem;
-    width: 9rem;
+    width: 6rem;
     border-radius: 30px;
     margin-bottom: 5px;
     box-shadow: 0px 8px 10px 3px rgba(0,0,0,0.68);

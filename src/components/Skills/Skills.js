@@ -31,7 +31,7 @@ const Skills = () => {
                 <h2 className="skills--subtitle"><i>Full-Stack Development</i></h2>
                 <div className="skills--list">
                     {Object.keys(fullstackimages).map((lang, index) => (
-                        <Fade>
+                        <Fade cascade delay="30">
                             <Skill key={index} lang={lang} image={fullstackimages[lang]} />
                         </Fade>
                     ))}
@@ -74,6 +74,7 @@ const Skill = (props) => {
     const containerStyle = {
         transform: hovered ? 'scale(0.95)' : 'scale(1)',
         transition: 'transform 0.3s ease-in-out'
+        
     };
 
     return (

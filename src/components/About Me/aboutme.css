@@ -18,11 +18,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .aboutme--abstract {
   font-weight: 100;
-  /* font-size: 25px; */
   margin-top: 18px;
   font-size: clamp(5px, 8vw, 15px); 
-  
-
 }
 
 .aboutme--header {
