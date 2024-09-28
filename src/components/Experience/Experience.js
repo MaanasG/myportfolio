@@ -8,6 +8,7 @@ import team303img from "./assets/team303front.png"
 import mainsimg from "./assets/1mainsfront.png"
 import portfolioimg from "./assets/portfoliofront.png"
 import pureyouthimg from "./assets/pureyouthfront.png"
+import sportsmediaimg from "./assets/sportsmedianet_logo.png"
 
 import { Fade } from "react-awesome-reveal"
 
@@ -19,6 +20,20 @@ const Experience = () => {
             <Fade cascade={true}>
 
                 <div className="jobs">
+                    <JobCard 
+                        title="Sports Media Inc."
+                        position="Data/Computer Science Intern"
+                        period="Aug. 2024 — Nov. 2024"
+                        description="Developed full-stack app to record and process voicecalls with clients"
+                        vidsrc={sportsmediaimg}
+                        linkto="company website placeholder"
+                        langs={["Python", 
+                            "React.js", 
+                            "FastAPI", 
+                            "Javascript", 
+                        ]}
+                    />
+                    
                     <JobCard 
                         title="iCode Franchise"
                         position="Director of Operations"
@@ -79,7 +94,7 @@ const Experience = () => {
                         langs={["Java", 
                             "HTML/CSS", 
                             "Javascript", 
-                            "React",
+                            "React.js",
                             "Figma"
                         ]}
                     />
@@ -94,7 +109,7 @@ const Experience = () => {
                         linkto="company website placeholder"
                         langs={["HTML/CSS", 
                             "Javascript", 
-                            "React",
+                            "React.js",
                             "Figma"
                         ]}
                     />

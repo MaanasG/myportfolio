@@ -47,7 +47,7 @@ export default function Landing() {
                     <button className="landing--button"
                         onClick={() => window.location.href = 'mailto:gopimaanas@example.com'}>
                             Email</button>
-                    <a href="https://drive.google.com/file/d/1DTjJAUafmm6EpU492lKeAlrbF4bMtAxw/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <a href="https://drive.google.com/drive/folders/1xUMkSERXPqKR4jd4frDzqPN14dih3JNK?usp=sharing" target="_blank" rel="noopener noreferrer">
                         <button className="landing--button">Resume</button>
                     </a>
                     <a href="https://www.linkedin.com/in/maanas-gopi" target="_blank" rel="noopener noreferrer">
